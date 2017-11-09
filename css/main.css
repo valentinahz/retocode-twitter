@@ -115,7 +115,6 @@ textarea{
 #cont{
 	height: 200px; 
 	position: relative;
-	background: #FFF;
 	border-radius: 2%;
 	width: 800px;
 	margin:0 auto;
@@ -125,3 +124,8 @@ textarea{
 	text-align: justify;
 	
 }	
+
+.color{
+	background: #FFF;
+	margin-top: 1em;
+}

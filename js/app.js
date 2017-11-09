@@ -1,31 +1,31 @@
 
 //app - TWITTER
+var btn_tweet = document.getElementById('btn-tweet');
+btn_tweet.addEventListener('click', function (){
+	//tomar el valor del textarea
+	//limpiar el input
+	//guardar en una variable el boton
 
-function add(){
-	//tenemos que tomar el texto ingresado en el textarea
-	var comments = document.getElementById('comment').value;
 
-	//limpiar el textarea
-	document.getElementById('comment').value = '';
+	var texto = document.getElementById('comment').value;
+	document.getElementById('comment').value='';
+	var contenedorComentario = document.getElementById('cont');
+	var newDiv =  document.createElement('div');
+	newDiv.setAttribute('class', 'color');
 
-	//contenedor que esta en el html
-	var cont = document.getElementById('cont');
+	var neParrafo = document.createElement('p');
 
-	//creamos el div que contiene cada comentario
-	var newComments = document.createElement('div');
+	var nodoText = document.createTextNode(texto);
 
-	//nodos de texto del textarea
-	var textNewComment = document.createTextNode(comments);
+	neParrafo.appendChild(nodoText);
+	newDiv.appendChild(neParrafo);
+	contenedorComentario.appendChild(newDiv);
 
-	var contenedorElemento = document.createElement('p');
-	
-	/*agregando los hijos */
-	contenedorElemento.appendChild(textNewComment);
+   var 
+});
 
-	newComments.appendChild(contenedorElemento);
 
-	cont.appendChild(newComments);
-    }
+
 
 
 
