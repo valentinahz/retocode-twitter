@@ -112,20 +112,37 @@ textarea{
   position: relative;
  }
 
-#cont{
-	height: 200px; 
+#cont div{
+	height: auto; 
 	position: relative;
-	border-radius: 2%;
+	border-radius: 3%;
 	width: 800px;
 	margin:0 auto;
 	color: #4E4D53;
 	text-align: left;
 	margin-bottom: 20px;
 	text-align: justify;
-	
-}	
-
-.color{
 	background: #FFF;
 	margin-top: 1em;
+	padding: 12px;
+}
+
+
+#contador{
+	font-size: 18px;
+	position: relative;
+	top: -38px;
+    left: 160px;
+}
+
+span {
+	color: #6AD2F3;
+}
+
+.colormedio{
+	color: green;
+}
+
+.colorfinal{
+	color: red;
 }
